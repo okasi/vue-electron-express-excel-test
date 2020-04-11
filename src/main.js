@@ -1,8 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import 'babel-polyfill';
+import Antd from 'ant-design-vue';
+import './assets/styles/index.css';
+import 'ant-design-vue/dist/antd.css';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+Vue.use(Antd);
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount('#app');
