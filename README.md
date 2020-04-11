@@ -1,4 +1,4 @@
-# vue-electron-excel-extract
+# vue-electron
 
 ## Project setup
 ```
